@@ -1,0 +1,257 @@
+/* Univsersal Style */
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+
+/* Header */
+
+header {
+  position: relative;
+  height: 4rem;
+  width: 100%;
+  border-bottom: solid 1px black;
+  background-image: url('resources/lights.jfif');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+header .content {
+    display: flex;
+    height: 3.7rem;
+    align-items: center;
+    padding: 0 1.875rem;
+  }
+
+ .topLogo {
+    color:  white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1;  
+}
+
+header ul {
+    display: flex;
+    flex: 1;
+    list-style-type: none;
+}
+
+nav li {
+    padding-left: 2rem;
+}
+
+nav a{
+    color:  white;
+    text-decoration: none;
+}
+
+/* About Section */
+
+.aboutSection{
+    display: flex;
+    margin: 0 auto;
+    height: 20rem;
+    width: 90%;
+    border: 2px solid black;
+    background-image: url('resources/lights.jfif');
+     background-position: top;
+     background-size: cover;
+     background-repeat: no-repeat;
+     z-index: 0;
+}
+
+.aboutContainer {
+    display: flex;
+    height: 60%;
+    width: 80%;
+    margin: 3rem auto 0 auto;
+    align-items: center;
+    
+}
+
+.aboutText {
+    flex: 1;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    opacity: .75;
+}
+
+.aboutText h4 {
+    font-weight: 200;
+}
+
+/* Club Images Section */
+
+.clubImages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+   padding-top: 3rem;
+
+}
+
+.clubImages .imageContainer {
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;;
+    text-align: center;
+}
+
+.imageContainer img {
+    max-height: 15rem;
+    max-width: 100%;
+    margin: auto;
+    
+    }
+
+.imageContainer h4 {
+    
+    color: rgb(126, 22, 22)
+}
+
+/* Testimonial */
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35rem;
+    background-color: black;
+}
+
+.testimonialColor0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25rem;
+    background-color: rgb(36, 2, 2);
+}
+
+.testimonialColor {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 15rem;
+    background-color: rgb(61, 4, 4);
+    color: white;
+}
+/* Join Responsive Club */
+
+.joinClub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
+    background-color: black;
+}
+
+.jcImageContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+height: 40rem;
+max-width: 35%;
+}
+
+.jcImageContainer img {
+max-width: 100%;
+max-height: 100%;
+
+}
+
+.jcText {
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+flex: 1;
+height: 40rem;
+color: white;
+text-align: center;
+
+}
+
+/* Image Gallery */
+
+.imageGallery {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 95%;
+    padding-top: 1rem;
+  
+
+}
+
+.galleryContainer {
+    flex: 1;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.galleryContainer img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 20rem;
+}
+
+
+/* Footer */
+
+footer {
+   
+    height: 4rem;
+    width: 100%;
+    border-bottom: solid 1px black;
+    background-image: url('resources/lights.jfif');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  
+  footer .content2 {
+      display: flex;
+      height: 3.7rem;
+      align-items: center;
+      padding: 0 1.875rem;
+    }
+  
+   .bottomLogo {
+      color:  white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      flex: 1;  
+  }
+  
+  footer ul {
+      display: flex;
+      flex: 1;
+      list-style-type: none;
+  }
+  
+  footer li {
+      padding-left: 2rem;
+  }
+  
+  footer a{
+      color:  white;
+      text-decoration: none;
+  }
