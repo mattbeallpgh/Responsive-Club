@@ -49,6 +49,41 @@ nav a{
     text-decoration: none;
 }
 
+@media only screen and (max-width: 480px) {
+    header .content {
+        display: flex;
+        height: 3.7rem;
+        align-items: center;
+        padding: 0 .5rem 0 1rem;
+      }
+    
+     .topLogo {
+        color:  white;
+        font-size: .85rem;
+        font-weight: bold;
+        flex: 1;  
+    }
+    
+    header ul {
+        display: flex;
+        flex: 1;
+        list-style-type: none;
+    }
+    
+    nav li {
+        padding-left: 2rem;
+        font-size: .75rem;
+    }
+    
+    nav a{
+        color:  white;
+        text-decoration: none;
+    }
+
+
+
+}
+
 /* About Section */
 
 .aboutSection{
@@ -62,6 +97,7 @@ nav a{
      background-size: cover;
      background-repeat: no-repeat;
      z-index: 0;
+     
 }
 
 .aboutContainer {
@@ -86,6 +122,8 @@ nav a{
     font-weight: 200;
 }
 
+
+
 /* Club Images Section */
 
 .clubImages {
@@ -103,6 +141,7 @@ nav a{
     padding: 1rem;
     margin: 1rem;;
     text-align: center;
+    
 }
 
 .imageContainer img {
@@ -115,6 +154,29 @@ nav a{
 .imageContainer h4 {
     
     color: rgb(126, 22, 22)
+}
+@media only screen and (max-width: 769px) {
+    .clubImages {
+        flex-flow: column;
+        height: 60rem;
+       padding-top: 1rem;
+       
+    }
+
+    .clubImages .imageContainer {
+        flex: 1;
+        padding: 0rem;
+        margin: 0rem;;
+        text-align: center;
+        
+    }
+    
+    .imageContainer img {
+        max-height: 15rem;
+        max-width: 100%;
+        margin: auto;
+        }
+        
 }
 
 /* Testimonial */
@@ -183,6 +245,61 @@ flex: 1;
 height: 40rem;
 color: white;
 text-align: center;
+}
+
+.jcText h3 {
+    
+}
+
+#small {
+    display: none;
+}
+
+@media only screen and (max-width: 769px) {
+    
+    #large {
+        display: none;
+    }
+
+    #small {
+        display: block;
+    }
+    .joinClub {
+        flex-direction: column;
+        width: 100%;
+        height: 50rem;
+        background-color: black;
+    }
+    
+    .jcImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 40rem;
+    max-width: 50%;
+    }
+    
+    .jcImageContainer img {
+    max-width: 100%;
+    max-height: 100%;
+    
+    }
+    
+    .jcText {
+    display: block;
+    color: white;
+    text-align: center;
+    max-width: 50%;
+    }
+
+    .jcText h1 {
+
+    }
+
+    .jcText h3 {
+        font-size: 1rem;
+    }
 
 }
 
@@ -191,18 +308,19 @@ text-align: center;
 .imageGallery {
     display: flex;
     justify-content:space-around;
-    align-items: center;
-    width: 95%;
+    
+    width: 100%;
     padding-top: 1rem;
-  
-
+   
 }
 
 .galleryContainer {
     flex: 1;
+    display: flex;
+    
     padding: 1rem;
     margin: auto;
-    text-align: center;
+   
     
 }
 
@@ -210,13 +328,26 @@ text-align: center;
     margin: auto;
     max-width: 100%;
     max-height: 20rem;
+    min-width: 10%
 }
 
+@media only screen and (max-width: 900px) {
+    .galleryContainer {
+        flex-flow: column;
+        
+    }
+
+    .galleryContainer img {
+        margin: auto;
+        max-width: 100%;
+        max-height: 20rem;
+        min-width: 10%
+    }
+}
 
 /* Footer */
 
 footer {
-   
     height: 4rem;
     width: 100%;
     border-bottom: solid 1px black;
@@ -224,7 +355,7 @@ footer {
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: 100;
   }
   
   footer .content2 {
@@ -255,3 +386,35 @@ footer {
       color:  white;
       text-decoration: none;
   }
+
+  @media only screen and (max-width: 480px) {
+    footer .content2 {
+        display: flex;
+        height: 3.7rem;
+        align-items: center;
+        padding: 0 .5rem 0 1rem;
+      }
+    
+     .bottomLogo {
+        color:  white;
+        font-size: .85rem;
+        font-weight: bold;
+        flex: 1;  
+    }
+    
+    footer ul {
+        display: flex;
+        flex: 1;
+        list-style-type: none;
+    }
+    
+    nav li {
+        padding-left: 2rem;
+        font-size: .75rem;
+    }
+    
+    nav a{
+        color:  white;
+        text-decoration: none;
+    }
+}
